@@ -1,0 +1,395 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+}
+
+.logo {
+  height: 90px;
+  width: 90px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn a{
+  color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.button-container button {
+  margin: 0 10px;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  padding: 1em 1em;
+  position: relative;
+  transition: .5s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+h1 {
+    color: #F0A500;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 68px; 
+    
+    padding: 0 10% 25px 10%;
+    margin: 0;
+    text-align: left;
+}
+
+.steps {
+    padding: 0 10% 115px 10%;
+}
+
+.steps p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+
+    margin: 0 0 7px 0;
+
+    color: #FFFFFF;
+}
+
+.order-container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  width: 700px;
+  height: 790px;
+
+  filter: drop-shadow(6px 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+.head{
+  padding: 20px 0 40px 0;
+}
+
+.head h2 {
+  color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 45px; 
+    
+    margin: 0;
+    text-align: center;
+}
+
+form {
+  padding: 0;
+  text-align: center ;
+}
+
+.order-form label {
+  display: block;
+  text-align: left;
+
+  margin-bottom: 5px;
+  padding: 0 7.5%;
+
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 30px; 
+}
+
+.order-form input {
+  width: 82%;
+  height: 38px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #bfbdbd;
+  border-radius: 5px;
+
+  font-size: 20px;
+}
+
+.order-form select {
+  width: 86%;
+  height: 45px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #bfbdbd;
+  border-radius: 5px;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="number"] {
+    padding: 10px;
+}
+
+.Btn-pay {
+  width: 150px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px auto;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  font-size: 20px;
+}
+
+.svgIcon {
+  width: 18px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn-pay::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn-pay:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn-pay:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+.credits {
+  padding-top: 50px;
+}
+
+.credits p{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 2000px){
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.logo {
+  height: 130px;
+  width: 130px;
+}
+
+.btn a{
+color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.563rem;
+}
+
+.btn {
+background: transparent;
+border: none;
+padding: 1em 1.3em;
+position: relative;
+transition: .5s ease;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+column-gap: 80px;
+row-gap: 35px;
+padding: 0 8.50%;
+}
+ 
+  h1 {
+    font-size: 70px;
+  }
+
+  .steps p {
+  font-size: 23px;
+}
+
+.bulk-container p {
+  font-size: 23px;
+}
+
+.order-container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  width: 700px;
+  height: 680px;
+
+  filter: drop-shadow(6px 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+.order-form label {
+  display: block;
+  text-align: left;
+
+  margin-bottom: 5px;
+  padding: 0 7.5%;
+
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px; 
+}
+
+.order-form input {
+  width: 82%;
+  height: 30px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #bfbdbd;
+  border-radius: 5px;
+
+  font-size: 13px;
+}
+
+.order-form select {
+  width: 86%;
+  height: 45px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #bfbdbd;
+  border-radius: 5px;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="number"] {
+    padding: 10px;
+}
+
+.Btn-pay {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px auto;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  font-size: 13px;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn-pay::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn-pay:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn-pay:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+.credits p{
+  font-size: 15px;
+}
+}

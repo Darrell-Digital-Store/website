@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <title>Darrell's Digital Store</title>
+            <link rel = "stylesheet" href = "orderForm/order.css">
+            <link rel="icon" type="images/x-icon" href="about/images/ddslogo.png">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        </head>
+  
+        <body style = "background-color: #141414;">
+
+            <div class = "navbar"> 
+                <a href="index.html">
+                    <img class = "logo" src = "main/images/ddslogo.png">
+                </a>
+                <div class="button-container">
+                    <button class="btn"><a href = "about.html">About</a></button>
+                    <button class="btn"><a href = "shop.html">Shop</a></button>
+                    <button class="btn"><a href = "feedback.html">Feedback</a></button>
+                    <button class="btn"><a href = "contact.html">Contact</a></button>
+                </div> 
+            </div>
+
+            <h1>HOW TO ORDER?</h1>
+            
+            <div class="steps">
+                <p>
+                    1. Fill out the order form below.
+                </p>
+                <p>
+                    2. Click the pay button if you want to receive your order/s through email. If you prefer to receive your order through messenger, 
+                    you can simply screenshot your order form below and send it via our messenger.
+                </p>
+                <p>
+                    3. Please wait for 2-3 minutes for our reply, which will include our payment details.
+                </p>
+                <p>
+                    4. Make your payment and please provide the receipt for your payment.
+                </p>
+                <p>
+                    5. After we receive your payment, please allow us 2 - 20 minutes to process your order.
+                </p>
+                <p>
+                    6. Claim your order and enjoy!
+                </p>
+                <p style="padding-top: 10px; font-weight: 600;">Reminder: If you can't see our email, please check your spam/junk folder.</p>
+            </div>
+
+            <div class="order-container">
+                <div class="head">
+                    <h2>ORDER FORM</h2>
+                </div>
+             
+
+                <div class="order-form">
+                    <form action="https://formsubmit.co/darrelldigistore.official@gmail.com" method="POST">
+                      <label>Full Name</label>
+                      <input type="text" name="Name" placeholder="Enter your Name" required>
+                  
+                      <label>Email</label>
+                      <input type="email" name="Email" placeholder="Enter your Email" required>
+                  
+                      <label>Product/s</label>
+                      <input type="text" name="Product/s" placeholder="e.g., PSN 10 USD" required>
+                  
+                      <label>Quantity</label>
+                      <input type="text" name="Quantity" placeholder="" required>
+                  
+                      <label>Mode of Payment</label>
+                      <select name="MoP">
+                        <option>GCash</option>
+                        <option>MAYA</option>
+                        <option>GRAB</option>
+                        <option>UnionBank</option>
+                        <option>BPI</option>
+                        <option>MetroBank</option>
+                        <option>SeaBANK</option>
+                        <option>7-11</option>
+                        <option>Ministop</option>
+                        <option>LBC</option>
+                        <option>Palawan Pawnshop</option>
+                      </select>
+                
+                  
+                      <button type="submit" class="Btn-pay">
+                        Pay
+                        <svg class="svgIcon" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg>
+                      </button>
+
+                      <input type="hidden" name="_next" value="https://darrell-digital-store.github.io/website/confirmation.html">
+
+                    </form>
+                  </div>
+
+            <div class="bulk-container">
+                <p>*Example for bulk orders</p>
+                <img src="orderForm/images/bulk.JPG">
+            </div>
+
+            <div class="credits">
+                <p>© 2023, Darrell’s Digital Store.</p>
+                <p style="margin-top: 1px; font-weight: 500;">Powered by GitHub</p>
+            </div>
+
+
+
+
+        </body>
+    </html>
