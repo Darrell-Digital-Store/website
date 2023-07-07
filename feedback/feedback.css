@@ -93,6 +93,7 @@
   }
 
  .body-text h2{
+   display: block;
     font-family: 'Inter';
     font-weight: 600;
     font-size: 40px;
