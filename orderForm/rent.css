@@ -85,6 +85,8 @@ h1 {
 }
 
 .steps {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 10% 115px 10%;
 }
 
