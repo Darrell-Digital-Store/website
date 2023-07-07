@@ -85,12 +85,9 @@ h1{
 
 
 .grid-container {
-  display: grid;
-  padding: 0px 10% 70px 10%;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 90px;
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5% 70px 5%;
   align-items: center;
 }
 
@@ -117,9 +114,13 @@ h1{
 */
 
 .items {
-  text-align: center; /* Center align the content horizontally */
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
 }
+
 
 
 .items p:nth-child(1) {
@@ -196,6 +197,22 @@ h1{
     
         text-align: center ;
     }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 5% 70px 5%;
+      align-items: center;
+    }
+  
+    
+    .items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 50px;
+    }
     
     .items p:nth-child(1) {
       text-align: center;
@@ -216,14 +233,6 @@ h1{
         margin: 5px 0 0 0;
     }
 
-    .grid-container {
-      display: grid;
-      padding: 0px 10% 70px 10%;
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 45px;
-      position: relative;
     
-      align-items: center;
-    }
 
 }

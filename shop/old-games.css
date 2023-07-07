@@ -134,7 +134,10 @@ color: aliceblue;
 }
 
 .details { 
-  text-align: center; /* Add this line to center the text horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .btn-rent{
@@ -337,7 +340,10 @@ color: aliceblue;
       }
 
       .details { 
-        text-align: center; /* Add this line to center the text horizontally */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
 
       .btn-rent{
@@ -374,7 +380,7 @@ color: aliceblue;
         font-size: 40px;
         text-align: center;
 
-        margin: 15px 0 65px 0;
+        margin: 1px 0 65px 0;
 
         color: #FFFFFF;
       }

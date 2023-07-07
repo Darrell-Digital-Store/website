@@ -107,19 +107,18 @@ h2{
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
-    padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5%;
+  margin-bottom: 80px;
   }
   
 
   .grid-header{
-    align-items: center;
     display: flex;
-    margin: 0;
+  align-items: center;
+  margin: 0;
   }
 
   header{
@@ -127,23 +126,29 @@ h2{
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     padding-left: 5px;
   }
 
-  .grid-item p{
+  .grid-item {
+    flex: 0 0 48%;
+  margin-bottom: 30px;
+  }
+
+  .grid-item p {
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 30px;
     margin-top: 7px;
   }
+  
 
   .credits p{
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     margin: 0;
   }
@@ -178,12 +183,11 @@ h2{
   }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 80px;
-  row-gap: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 8.50%;
+  margin-bottom: 0;
 }
     
     h2{

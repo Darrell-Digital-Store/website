@@ -84,6 +84,8 @@ h1 {
       }
     
       .info-container {
+        display: flex;
+        flex-wrap: wrap;
         padding: 37px 5% 15px 5%;
       }
     
